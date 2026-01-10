@@ -33,7 +33,7 @@ A teacher-first AI co-pilot for Mandarin lesson design, aligned with Taiwan’s 
 - Supported under a Ministry of Education program to advance the Mandarin education industry (2025).
 
 **Links**
-- Project page: [AI Marndarin Partner](https://hackmd.io/@o_SxVezFSQGGbCkSyIX1qg/S157R4Jrbg)
+- Project page: [AI Marndarin Partner](ai-mandarin-partner.html)
 - Contact: [mandarin.ai.partner@gmail.com](mailto:mandarin.ai.partner@gmail.com)
 
 ---

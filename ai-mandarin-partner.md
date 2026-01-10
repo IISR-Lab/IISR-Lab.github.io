@@ -1,0 +1,142 @@
+
+<style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 1000px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
+    a { color: #0366d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    table { width: 100%; border-collapse: collapse; }
+    img { max-width: 100%; }
+</style>
+
+
+[Home](index.html) ｜ [People](people.html) ｜ [Research](research.html) ｜ [Impact](impact.html) ｜ [Publications](publications.html) ｜ [News](news.html) ｜ [Join Us](joinus.html) ｜ [Contact](contact.html)
+
+---
+
+<!-- Hero Section: 使用緊湊表格，防止跑版 -->
+<table style="width:100%; border:none; border-collapse:collapse; margin-bottom:30px; border-bottom:1px solid #eee; padding-bottom:30px;">
+<tr style="border:none;">
+<td style="width:25%; vertical-align:top; border:none; padding-right:30px; min-width:180px;">
+<img src="https://hackmd.io/_uploads/B18L0N1r-g.png" alt="AI華語拍檔 Logo" style="width:100%; max-width:200px; height:auto; display:block;">
+</td>
+<td style="width:75%; vertical-align:top; border:none;">
+<h1 style="margin:0 0 10px 0; border:none; font-size:2em; color:#333; line-height:1.2;">Mandarin AI Partner</h1>
+<div style="font-style:italic; color:#E67E22; margin-bottom:15px; font-weight:bold; border-left:3px solid #E67E22; padding-left:10px;">Teacher-first AI co-pilot for Mandarin lesson design, aligned with Taiwan’s TBCL standards.</div>
+<div style="line-height:1.6; color:#555; margin-bottom:15px;">A practical web tool that helps Mandarin teachers generate level-appropriate teaching materials faster—without losing pedagogical control.</div>
+<div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px;">
+<strong style="font-size:0.9em; color:#333;">Built on:</strong>
+<span style="background:#e8f4fd; color:#0366d6; padding:3px 8px; border-radius:4px; font-size:0.85em;">TAIDE / EDU-TAIDE</span>
+<span style="background:#f2f2f2; color:#666; padding:3px 8px; border-radius:4px; font-size:0.85em;">Trustworthy LLM</span>
+</div>
+</td>
+</tr>
+</table>
+
+<!-- 雙欄佈局：Who & Why -->
+<table style="width:100%; border:none; border-collapse:collapse; margin-bottom:40px;">
+<tr style="border:none;">
+<td style="width:50%; vertical-align:top; border:none; padding-right:20px;">
+<h3 style="margin-top:0; border-bottom:2px solid #eee; padding-bottom:5px;">🎯 Who it’s for</h3>
+<ul style="line-height:1.7; color:#444; padding-left:20px;">
+<li>Mandarin teachers (in Taiwan or overseas programs)</li>
+<li>Curriculum designers & teaching assistants</li>
+<li>Learners preparing for level-based progress and TOCFL-oriented practice</li>
+</ul>
+</td>
+<td style="width:50%; vertical-align:top; border:none; padding-left:20px;">
+<h3 style="margin-top:0; border-bottom:2px solid #eee; padding-bottom:5px;">✨ Why it’s different</h3>
+<ul style="line-height:1.7; color:#444; padding-left:20px;">
+<li><b>Taiwan-aligned:</b> Designed around <b>TBCL</b> and Taiwan Mandarin teaching needs</li>
+<li><b>Teacher-first workflow:</b> Output is structured for lesson planning, not general chat</li>
+<li><b>Quality improvement loop:</b> Teacher feedback is used to iteratively improve generation quality</li>
+</ul>
+</td>
+</tr>
+</table>
+
+## 🛠️ What you can do with it
+
+<!-- 功能卡片：使用表格模擬 Grid，保證不跑版 -->
+<table style="width:100%; border:none; border-collapse:separate; border-spacing:10px; margin-bottom:30px;">
+<tr style="border:none;">
+<td style="width:50%; vertical-align:top; background:#fafafa; padding:15px; border-radius:8px; border:1px solid #eee;">
+<h4 style="margin:0 0 10px 0; color:#E67E22;">📖 Level-controlled Reading</h4>
+<div style="font-size:0.95em; color:#555;">Generate classroom-ready texts (TBCL 1–5) with controllable difficulty—useful for warm-up reading and thematic units.</div>
+</td>
+<td style="width:50%; vertical-align:top; background:#fafafa; padding:15px; border-radius:8px; border:1px solid #eee;">
+<h4 style="margin:0 0 10px 0; color:#E67E22;">📝 Vocabulary Lists</h4>
+<div style="font-size:0.95em; color:#555;">Automatically produce a usable word list to reduce prep time, while keeping teacher editability in the loop.</div>
+</td>
+</tr>
+<tr style="border:none;">
+<td style="width:50%; vertical-align:top; background:#fafafa; padding:15px; border-radius:8px; border:1px solid #eee;">
+<h4 style="margin:0 0 10px 0; color:#E67E22;">🧩 Grammar & Drills</h4>
+<div style="font-size:0.95em; color:#555;">Generate level-appropriate examples and practice items that can be directly adapted into worksheets.</div>
+</td>
+<td style="width:50%; vertical-align:top; background:#fafafa; padding:15px; border-radius:8px; border:1px solid #eee;">
+<h4 style="margin:0 0 10px 0; color:#888;">🎓 TOCFL-style Items (In Dev)</h4>
+<div style="font-size:0.95em; color:#555;">Move beyond “simple Q&A” by generating practice items closer to test specifications and cognitive levels.</div>
+</td>
+</tr>
+</table>
+
+---
+
+## 👥 Core Team
+
+<table style="width:100%; border:none; border-collapse:collapse;">
+<tr style="border:none;">
+<td style="width:50%; vertical-align:top; border:none; padding-right:20px;">
+<div style="margin-bottom:20px;">
+<strong style="font-size:1.1em; color:#333;">PI — Richard Tzong-Han Tsai (蔡宗翰)</strong><br>
+<span style="font-size:0.9em; color:#666;">Overall leadership; TAIDE/EDU-TAIDE technical direction.</span>
+</div>
+<div style="margin-bottom:20px;">
+<strong style="font-size:1.1em; color:#333;">Co-PI — Shih-Wen Chiu (邱詩雯)</strong><br>
+<span style="font-size:0.9em; color:#666;">Pedagogical design; teacher community engagement.</span>
+</div>
+<div style="margin-bottom:20px;">
+<strong style="font-size:1.1em; color:#333;">Co-PI — Ya-Fen Liu (劉雅芬)</strong><br>
+<span style="font-size:0.9em; color:#666;">Linguistic standards alignment & data quality control.</span>
+</div>
+</td>
+<td style="width:50%; vertical-align:top; border:none;">
+<div style="margin-bottom:20px;">
+<strong style="font-size:1.1em; color:#333;">PM — Yuhan Weng</strong><br>
+<span style="font-size:0.9em; color:#666;">Project planning, execution tracking & coordination.</span>
+</div>
+<div style="margin-bottom:20px;">
+<strong style="font-size:1.1em; color:#333;">Outreach — Lichi Shih</strong><br>
+<span style="font-size:0.9em; color:#666;">Operations; teacher onboarding & events.</span>
+</div>
+<div style="margin-bottom:20px;">
+<strong style="font-size:1.1em; color:#333;">Tech Lead — Jason Liao</strong><br>
+<span style="font-size:0.9em; color:#666;">Technical architecture, product engineering & deployment.</span>
+</div>
+</td>
+</tr>
+</table>
+
+> For the full lab roster, see: [People](people.html)
+
+---
+
+## 🚀 Try it / Collaborate
+
+<div style="background-color:#f8f9fa; border-left:4px solid #007bff; padding:15px; border-radius:4px;">
+<p style="margin:0; color:#444;">If you would like a trial account or want to join pilot use and feedback sessions, please contact us:</p>
+<p style="margin:10px 0 0 0; font-weight:bold;">👉 Email: <a href="mailto:mandarin.ai.partner@gmail.com">mandarin.ai.partner@gmail.com</a></p>
+</div>
+
+<br>
+
+<details>
+<summary style="cursor:pointer; color:#666;"><strong>ℹ️ About the project (Funding & Background)</strong></summary>
+<div style="padding:15px; background:#fff; border:1px solid #eee; margin-top:5px; border-radius:5px; font-size:0.9em;">
+<ul style="margin:0; padding-left:20px;">
+<li><strong>Program:</strong> Ministry of Education — Subsidy Program for Promoting the Mandarin Education Industry</li>
+<li><strong>Period:</strong> 2025 (ROC 114)</li>
+<li><strong>Focus:</strong> TBCL-aligned generation (texts, vocabulary, grammar practice) and TOCFL-oriented item prototyping, plus teacher outreach and web deployment.</li>
+</ul>
+</div>
+</details>
+```
