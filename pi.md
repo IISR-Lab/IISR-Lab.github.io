@@ -37,9 +37,9 @@
 <td style="vertical-align:top; border:none;">
 <h1 style="margin-top:0; margin-bottom:10px; color:#2c3e50; line-height:1.2;">Richard Tzong-Han Tsai <span style="font-size:0.6em; color:#7f8c8d; font-weight:normal;">(蔡宗翰)</span></h1>
 <div style="font-size:1.05em; color:#333; margin-bottom:20px; line-height:1.6; border-left:4px solid #3498db; padding-left:15px;">
-<div><b>Research Fellow</b>, RCHSS, Academia Sinica (中央研究院)</div>
 <div><b>Professor</b>, Dept. of CSIE, National Central University (中央大學)</div>
 <div><b>Joint Professor</b>, Graduate Inst. of Linguistics, National Taiwan University (台灣大學)</div>
+<div><b>Joint Research Fellow</b>, RCHSS, Academia Sinica (中央研究院)</div>
 </div>
 <p style="line-height:1.7; color:#444;">
 <b>Prof. Richard Tzong-Han Tsai</b> is a leading figure in Taiwan's AI landscape. He currently serves as the <b>President of the Taiwanese Association for Artificial Intelligence (TAAI)</b>.
