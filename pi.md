@@ -163,4 +163,3 @@ His leadership extends to national-level talent cultivation and infrastructure. 
 - **Author**, *Introduction to AI+AIoT (AI+AIoT 概論)* (2023)
 - **Author**, *AI Lessons for Elementary Students (寫給小學生看的 AI 課)* (2023)
 - **Author**, *AI Lessons for Middle Schoolers (寫給中學生看的 AI 課)* (2022)
-```
