@@ -32,8 +32,8 @@
 <div style="margin-bottom:25px;">
 <div style="font-weight:bold; margin-bottom:8px; font-size:0.9em; color:#555;">Research Areas:</div>
 <span style="background:#f0f0f0; padding:3px 10px; border-radius:15px; font-size:0.85em; margin:0 5px 5px 0; display:inline-block; color:#444;">LLM Benchmarking</span>
-<span style="background:#f0f0f0; padding:3px 10px; border-radius:15px; font-size:0.85em; margin:0 5px 5px 0; display:inline-block; color:#444;">Biomedical NLP</span>
 <span style="background:#f0f0f0; padding:3px 10px; border-radius:15px; font-size:0.85em; margin:0 5px 5px 0; display:inline-block; color:#444;">Localized LLMs</span>
+<span style="background:#f0f0f0; padding:3px 10px; border-radius:15px; font-size:0.85em; margin:0 5px 5px 0; display:inline-block; color:#444;">Biomedical NLP</span>
 <span style="background:#f0f0f0; padding:3px 10px; border-radius:15px; font-size:0.85em; margin:0 5px 5px 0; display:inline-block; color:#444;">Digital Humanities</span>
 </div>
 
