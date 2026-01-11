@@ -63,6 +63,7 @@ We build <b>methods + benchmarks + applications</b> as a complete stack for loca
 <span style="background:#eafaf1; color:#27ae60; padding:4px 10px; border-radius:4px; font-weight:bold; font-size:0.85em; margin-right:5px;">🏆 BioASQ Champion (6 yrs)</span>
 <span style="background:#f2f2f2; color:#555; padding:4px 10px; border-radius:4px; font-weight:bold; font-size:0.85em; margin-right:5px;">Briefings in Bioinformatics</span>
 <span style="background:#f2f2f2; color:#555; padding:4px 10px; border-radius:4px; font-weight:bold; font-size:0.85em; margin-right:5px;">npj Digital Medicine</span>
+<span style="background:#f2f2f2; color:#555; padding:4px 10px; border-radius:4px; font-weight:bold; font-size:0.85em; margin-right:5px;">Database (Oxford)</span>
 </div>
 
 **Motivation:** Biomedical data are often **high-noise / low-resource**, and clinical text requires strict privacy protection.
@@ -76,7 +77,7 @@ We build <b>methods + benchmarks + applications</b> as a complete stack for loca
   - Discovery of **inverse scaling** beyond ~6B parameters without targeted adaptation (*npj Digital Medicine, 2025*).
   - Efficient solution via **PEFT/LoRA**, improving privacy protection while preserving clinical utility.
 - **Data-centric Ensemble Learning** [📄 Paper](https://doi.org/10.1093/database/baae127)  
-  Automated data augmentation and normalization for robust relation extraction (*Database, 2025*).
+  **Enhancing biomedical relation extraction through data-centric and preprocessing-robust ensemble learning approach** (*Database, 2025*).
 
 <!-- Impact Box -->
 <div style="background:#f0fdf4; border-left:4px solid #27ae60; padding:15px; border-radius:4px; margin-top:20px;">
@@ -94,15 +95,18 @@ Many global BioNLP systems optimize model architectures on curated datasets; we 
 <div style="margin-bottom:15px;">
 <span style="background:#fff5f5; color:#c0392b; padding:4px 10px; border-radius:4px; font-weight:bold; font-size:0.85em; margin-right:5px;">IJGIS 2025</span>
 <span style="background:#fff5f5; color:#c0392b; padding:4px 10px; border-radius:4px; font-weight:bold; font-size:0.85em; margin-right:5px;">EMNLP 2023</span>
+<span style="background:#fff5f5; color:#c0392b; padding:4px 10px; border-radius:4px; font-weight:bold; font-size:0.85em; margin-right:5px;">DSH 2025</span>
 </div>
 
 **Motivation:** Humanities data are frequently **unstructured**, **archaic in language**, and **lack annotations**, making standard supervised learning ineffective.
 
 ### 🔑 Key Contributions
-- **Historical Maps Without Labels (IJGIS 2025)**  
+- **Historical Maps Without Labels (IJGIS 2025)** [📄 Paper](https://www.tandfonline.com/doi/full/10.1080/13658816.2024.2425668) [💻 Code](https://figshare.com/articles/software/MapStyleSeg_full_code/25560276/1?file=45532515)  
   **Unsupervised domain adaptation (UDA)** bridging modern labeled maps and historical unlabeled maps for land-use understanding.
 - **MingOfficial (EMNLP 2023)** [📄 Paper](https://aclanthology.org/2023.emnlp-main.266/) [💾 Data (Depository)](https://data.depositar.io/dataset/ming_official)  
   A historical context-aware representation learning framework embedding **time, space, and events** into career trajectory representations.
+- **Computational Analysis of Ming Military Power** [📄 Paper](https://doi.org/10.1093/llc/fqad088) [📰 Media (中文)](https://www.sinica.edu.tw/cp/697)  
+  A digital humanities approach to analyzing the roles of Supreme Commanders and Grand Coordinators in *Ming Shilu* (*Digital Scholarship in the Humanities, 2025*).
 - **LLM-based Long-document Analysis**  
   Designing grounded RAG workflows with context fields (metadata + text) and human-in-the-loop benchmarks to improve traceability in historical sources.
 
@@ -138,4 +142,3 @@ Instead of applying generic tools, we develop <b>algorithmic methods</b> (like U
 <td style="padding:10px 0;">East Asian multilingual model merging with <b>KISTI</b> (Korea, 2025)</td>
 </tr>
 </table>
-```
