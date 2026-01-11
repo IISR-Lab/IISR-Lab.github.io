@@ -151,7 +151,7 @@ His leadership extends to national-level talent cultivation and infrastructure. 
 - **Natural Language Processing** (Graduate)
 - **Social Media Mining** (Graduate)
 - **Information and Service Learning (資訊與服務學習)** (Undergraduate)
-- **Digital Humanities and AI (數位人文技術與應用)** [✨ Featured Course](course_dh.html)
+- **Digital Humanities and AI (數位人文技術與應用)** [✨ Featured Course](course_dhta.html)
   *(Graduate Inst. of Linguistics, NTU)*
 
 ---
