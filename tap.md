@@ -9,8 +9,7 @@
 
 
 <style>
-/* --- 1. HackMD 專用暴力破解樣式 (必備) --- */
-/* 強制將外層容器撐開至 100% 視窗寬度 */
+/* --- 1. HackMD 專用強制全寬樣式 (必備) --- */
 .container-fluid, #doc, .markdown-body {
     max-width: 100% !important;
     width: 100% !important;
@@ -18,12 +17,12 @@
     padding: 0 !important;
     margin: 0 !important;
 }
-/* 隱藏 HackMD 可能產生的多餘捲軸 */
+/* 防止出現水平捲軸 */
 body {
     overflow-x: hidden;
 }
 
-/* --- 2. 您的網頁樣式 --- */
+/* --- 2. 網頁視覺樣式 --- */
 .custom-body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1.6;
@@ -42,7 +41,7 @@ body {
     white-space: nowrap;
     position: sticky;
     top: 0;
-    z-index: 9999; /* 確保在 HackMD 介面上層 */
+    z-index: 9999;
 }
 .nav-bar a {
     color: #0366d6;
@@ -53,7 +52,7 @@ body {
 .nav-bar a:hover { text-decoration: underline; }
 .nav-sep { color: #ccc; }
 
-/* Hero Banner - 滿版背景 */
+/* Hero Banner (滿版) */
 .hero-banner {
     background: linear-gradient(135deg, #002A5C 0%, #c0392b 100%);
     color: white;
@@ -65,25 +64,28 @@ body {
     box-sizing: border-box;
 }
 
-/* 內容容器 - 置中核心 */
+/* 內容容器 (限制寬度 + 置中) */
 .content-wrapper {
     width: 100%;
-    max-width: 1200px; /* 限制內容寬度 */
-    margin: 0 auto;    /* 左右自動置中 */
+    max-width: 1200px;
+    margin: 0 auto;    /* 關鍵：讓內容置中 */
     padding: 40px 20px;
     box-sizing: border-box;
-    display: block; /* 確保是區塊元素 */
+    display: block;
 }
 
-/* 元素樣式 */
-.custom-body h1, .custom-body h2, .custom-body h3 { color: #2c3e50; margin-top: 1em; }
+/* 標題設定 */
+.custom-body h1, .custom-body h2, .custom-body h3 { 
+    color: #2c3e50; 
+    margin-top: 1em; 
+    border-bottom: none !important; /* 移除 HackMD 預設底線 */
+}
 .section-title {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 40px;
     font-size: 2em;
     position: relative;
-    border-bottom: none !important;
 }
 .section-title::after {
     content: "";
@@ -94,7 +96,14 @@ body {
     margin: 10px auto 0;
 }
 
-/* 卡片與網格系統 */
+/* Mission Statement 專用樣式 */
+.mission-box {
+    max-width: 800px;      /* 縮窄寬度以利閱讀 */
+    margin: 0 auto 60px auto; /* 區塊本身置中 */
+    text-align: left;      /* 文字靠左對齊 */
+}
+
+/* 卡片與網格 */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -107,7 +116,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     padding: 30px;
-    flex: 1 1 300px; /* Flex 設定確保不崩壞 */
+    flex: 1 1 350px;
     min-width: 300px;
     border-top: 5px solid #ddd;
     box-sizing: border-box;
@@ -130,6 +139,7 @@ body {
     color: inherit;
     display: block;
     box-sizing: border-box;
+    transition: transform 0.2s;
 }
 .team-member:hover {
     transform: translateY(-3px);
@@ -150,25 +160,25 @@ body {
 .custom-body ul { padding-left: 20px; color: #555; text-align: left; }
 </style>
 
-<!-- 內容區：使用一個最外層 div 包裹所有內容，防止被 HackMD 分割 -->
+<!-- 內容區開始 -->
 <div class="custom-body">
 
 <div class="nav-bar">
-<a href="#">Home</a> <span class="nav-sep">|</span>
-<a href="#">People</a> <span class="nav-sep">|</span>
-<a href="#">PI Profile</a> <span class="nav-sep">|</span>
-<a href="#">Research</a> <span class="nav-sep">|</span>
-<a href="#">Impact</a> <span class="nav-sep">|</span>
-<a href="#">Collab</a> <span class="nav-sep">|</span>
-<a href="#">Pubs</a> <span class="nav-sep">|</span>
-<a href="#">News</a> <span class="nav-sep">|</span>
-<a href="#">Join</a> <span class="nav-sep">|</span>
-<a href="#">Contact</a>
+<a href="index.html">Home</a> <span class="nav-sep">|</span>
+<a href="people.html">People</a> <span class="nav-sep">|</span>
+<a href="pi.html">PI Profile</a> <span class="nav-sep">|</span>
+<a href="research.html">Research</a> <span class="nav-sep">|</span>
+<a href="impact.html">Impact</a> <span class="nav-sep">|</span>
+<a href="collaboration.html">Collab</a> <span class="nav-sep">|</span>
+<a href="publications.html">Pubs</a> <span class="nav-sep">|</span>
+<a href="news.html">News</a> <span class="nav-sep">|</span>
+<a href="joinus.html">Join</a> <span class="nav-sep">|</span>
+<a href="contact.html">Contact</a>
 </div>
 
 <div class="hero-banner">
 <div style="font-weight:bold;letter-spacing:3px;margin-bottom:15px;opacity:0.9;">2025 UAAT TAIWAN-CANADA AFFINITY PROGRAM</div>
-<h1 style="margin:0;font-size:3em;color:white;line-height:1.2;border-bottom:none;">Revitalising Taiwanese Hokkien through <br>Neural Language Technologies</h1>
+<h1 style="margin:0;font-size:3em;color:white;line-height:1.2;">Revitalising Taiwanese Hokkien through <br>Neural Language Technologies</h1>
 <p style="font-size:1.5em;margin-top:20px;opacity:0.95;font-weight:300;">A Global Collaborative Approach to Educational Learning and Multimodal AI</p>
 <div style="margin-top:30px;">
 <span style="background:rgba(255,255,255,0.2);padding:5px 15px;border-radius:20px;font-weight:bold;margin:0 5px;">🇹🇼 Taiwan</span>
@@ -179,17 +189,19 @@ body {
 
 <div class="content-wrapper">
 
-<div style="max-width:1000px;margin:0 auto 60px auto;text-align:center;">
-<h2 style="color:#2c3e50;border-bottom:none;">Mission Statement</h2>
-<p style="font-size:1.1em;color:#555;line-height:1.8;">
+<!-- Mission Statement (修正版：區塊置中，文字靠左) -->
+<div class="mission-box">
+<h2 style="color:#2c3e50; text-align:center;">Mission Statement</h2>
+<p style="font-size:1.1em; color:#555; line-height:1.8;">
 This multi-year project is co-led by <b>Prof. Richard Tzong-Han Tsai (Taiwan)</b> and <b>Prof. Annie En-Shiun Lee (Canada)</b> to combat the digital scarcity of low-resource languages. By uniting top institutions across both nations, we bridge the generational linguistic gap through high-quality machine translation resources and AI-powered multimodal learning tools like <b>ATAIGI</b>.
 </p>
 </div>
 
+<!-- Research Pillars -->
 <h2 class="section-title">Core Research Thrusts</h2>
 <div class="card-container">
 <div class="card card-blue">
-<h3 style="margin-top:0;color:#002A5C;border-bottom:none;">1. Improving Translation Quality</h3>
+<h3 style="margin-top:0;color:#002A5C;">1. Improving Translation Quality</h3>
 <p><b>Goal:</b> Overcoming data scarcity and "translationese" errors in Sinitic languages (Hokkien, Cantonese, Wu).</p>
 <hr style="border:0;border-top:1px solid #eee;margin:15px 0;">
 <ul>
@@ -200,7 +212,7 @@ This multi-year project is co-led by <b>Prof. Richard Tzong-Han Tsai (Taiwan)</b
 </ul>
 </div>
 <div class="card card-red">
-<h3 style="margin-top:0;color:#c0392b;border-bottom:none;">2. AI-Powered Language Learning</h3>
+<h3 style="margin-top:0;color:#c0392b;">2. AI-Powered Language Learning</h3>
 <p><b>Goal:</b> Creating an immersive, multimodal educational platform for language revitalization.</p>
 <hr style="border:0;border-top:1px solid #eee;margin:15px 0;">
 <ul>
@@ -212,33 +224,58 @@ This multi-year project is co-led by <b>Prof. Richard Tzong-Han Tsai (Taiwan)</b
 </div>
 </div>
 
+<!-- Team Section -->
 <h2 class="section-title">The Collaborative Team</h2>
 <div class="card-container" style="align-items:flex-start;">
+<!-- Taiwan Team -->
 <div style="flex:1;min-width:300px;">
-<h3 style="text-align:center;color:#002A5C;margin-bottom:20px;border-bottom:none;">🇹🇼 Taiwan Team</h3>
+<h3 style="text-align:center;color:#002A5C;margin-bottom:20px;">🇹🇼 Taiwan Team</h3>
 <div class="team-grid">
-<a href="#" class="team-member">
+<!-- Richard Tsai -->
+<a href="pi.html" class="team-member">
 <span class="role-badge role-pi">Principal Investigator (Taiwan)</span>
 <div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Richard Tzong-Han Tsai</div>
 <div style="font-size:0.85em;color:#666;">National Central University / Academia Sinica</div>
 <div style="font-size:0.85em;margin-top:5px;"><i>NLP, Code-mixing, TAIDE Technical Lead</i></div>
 </a>
-<a href="#" class="team-member">
+<!-- Chia-Lin Lee -->
+<a href="https://psychology.ntu.edu.tw/en/faculty_teacher_detail.php?id=38" target="_blank" class="team-member">
 <span class="role-badge role-coi">Co-Investigator</span>
 <div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Chia-Lin Lee</div>
 <div style="font-size:0.85em;color:#666;">NTU Linguistics/Psychology</div>
 </a>
+<!-- Shu-Kai Hsieh -->
+<a href="https://lope.linguistics.ntu.edu.tw/" target="_blank" class="team-member">
+<span class="role-badge role-coi">Co-Investigator</span>
+<div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Shu-Kai Hsieh</div>
+<div style="font-size:0.85em;color:#666;">NTU Linguistics</div>
+</a>
+<!-- Chen-Hao Chiu -->
+<a href="https://homepage.ntu.edu.tw/~chenhaochiu/" target="_blank" class="team-member">
+<span class="role-badge role-coi">Co-Investigator</span>
+<div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Chen-Hao Chiu</div>
+<div style="font-size:0.85em;color:#666;">NTU Linguistics</div>
+</a>
+<!-- Hung-yi Lee -->
+<a href="https://speech.ee.ntu.edu.tw/~hylee/" target="_blank" class="team-member">
+<span class="role-badge role-collab">Technical Collaborator</span>
+<div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Hung-yi Lee</div>
+<div style="font-size:0.85em;color:#666;">NTU Electrical Engineering</div>
+</a>
 </div>
 </div>
+<!-- Canada Team -->
 <div style="flex:1;min-width:300px;">
-<h3 style="text-align:center;color:#c0392b;margin-bottom:20px;border-bottom:none;">🇨🇦 Canada Team</h3>
+<h3 style="text-align:center;color:#c0392b;margin-bottom:20px;">🇨🇦 Canada Team</h3>
 <div class="team-grid">
-<a href="#" class="team-member">
+<!-- Annie Lee -->
+<a href="https://www.cs.toronto.edu/~ealee/" target="_blank" class="team-member">
 <span class="role-badge role-pi">Principal Investigator (Canada)</span>
 <div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Annie En-Shiun Lee</div>
 <div style="font-size:0.85em;color:#666;">University of Toronto / Ontario Tech U</div>
 </a>
-<a href="#" class="team-member">
+<!-- Muhammad Usman -->
+<a href="https://science.ontariotechu.ca/people/faculty/muhammad-usman.php" target="_blank" class="team-member">
 <span class="role-badge role-coi">Co-Investigator</span>
 <div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Muhammad Usman</div>
 <div style="font-size:0.85em;color:#666;">Ontario Tech University</div>
@@ -247,11 +284,12 @@ This multi-year project is co-led by <b>Prof. Richard Tzong-Han Tsai (Taiwan)</b
 </div>
 </div>
 
+<!-- Milestones -->
 <h2 class="section-title">Impact & Milestones</h2>
 <div class="card" style="background:#fff8e1;border-top:5px solid #f1c40f;">
-<h3 style="margin-top:0;border-bottom:none;">🚀 Key Achievements</h3>
+<h3 style="margin-top:0;">🚀 Key Achievements</h3>
 <ul>
-<li><b>NAACL 2025 Demo Paper:</b> <i>"ATAIGI: An AI-Powered Multimodal Learning App Leveraging Generative Models for Low-Resource Taiwanese Hokkien"</i>.</li>
+<li><b>NAACL 2025 Demo Paper:</b> <i>"ATAIGI: An AI-Powered Multimodal Learning App Leveraging Generative Models for Low-Resource Taiwanese Hokkien"</i>. <a href="https://aclanthology.org/2025.naacl-demo.2/" target="_blank">View Paper</a></li>
 <li><b>LREC-COLING 2024:</b> <i>"Enhancing Taiwanese Hokkien Dual Translation by Exploring and Standardizing of Four Writing Systems"</i>.</li>
 <li><b>SINITIC MT ERROR Dataset:</b> Publicly released for the Sinitic NLP research community.</li>
 </ul>
@@ -262,7 +300,7 @@ Supported by the <b>UAAT Taiwan Affinity Program</b> and the <b>National Science
 </div>
 
 <div style="text-align:center;margin-top:40px;padding-bottom:60px;">
-<a href="#" style="background:#333;color:#fff;padding:12px 30px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.2);">← Back to Collaborations</a>
+<a href="collaboration.html" style="background:#333;color:#fff;padding:12px 30px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.2);">← Back to Collaborations</a>
 </div>
 
-</div> <!-- 結束 custom-body -->
+</div> <!-- custom-body end -->
