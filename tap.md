@@ -1,0 +1,172 @@
+
+<style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 1000px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
+    a { color: #0366d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    table { width: 100%; border-collapse: collapse; }
+    img { max-width: 100%; }
+</style>
+
+
+<!-- 全域樣式 -->
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;margin:0;padding:0;line-height:1.6;color:#333;background-color:#f9f9f9}
+.nav-bar{background:#fff;text-align:center;padding:15px 20px;box-shadow:0 2px 4px rgba(0,0,0,0.05);font-size:0.95em;white-space:nowrap;position:sticky;top:0;z-index:1000}
+.nav-bar a{color:#0366d6;text-decoration:none;margin:0 10px;font-weight:500}
+.nav-bar a:hover{text-decoration:underline}
+.nav-sep{color:#ccc}
+.content-wrapper{padding:40px 5%}
+h1,h2,h3{color:#2c3e50}
+.section-title{text-align:center;margin-top:60px;margin-bottom:40px;font-size:2em;position:relative}
+.section-title::after{content:"";display:block;width:60px;height:3px;background:#c0392b;margin:10px auto 0}
+.hero-banner{background:linear-gradient(135deg,#002A5C 0%,#c0392b 100%);color:white;padding:80px 5%;text-align:center;border-radius:0 0 20px 20px;margin-bottom:40px}
+.card-container{display:flex;flex-wrap:wrap;gap:30px;justify-content:center}
+.card{background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);padding:30px;flex:1;min-width:350px;border-top:5px solid #ddd}
+.card-blue{border-top-color:#002A5C}
+.card-red{border-top-color:#c0392b}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.team-member{background:white;padding:20px;border-radius:8px;border:1px solid #eee;transition:transform 0.2s;text-decoration:none;color:inherit;display:block}
+.team-member:hover{transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,0.1);border-color:#3498db}
+.role-badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:0.8em;font-weight:bold;margin-bottom:5px}
+.role-pi{background:#e8f4fd;color:#002A5C}
+.role-coi{background:#fff5f5;color:#c0392b}
+.role-collab{background:#f0fdf4;color:#27ae60}
+ul{padding-left:20px;color:#555}
+li{margin-bottom:8px}
+</style>
+
+<!-- 導覽列 -->
+<div class="nav-bar">
+<a href="index.html">Home</a> <span class="nav-sep">|</span>
+<a href="people.html">People</a> <span class="nav-sep">|</span>
+<a href="pi.html">PI Profile</a> <span class="nav-sep">|</span>
+<a href="research.html">Research</a> <span class="nav-sep">|</span>
+<a href="impact.html">Impact</a> <span class="nav-sep">|</span>
+<a href="collaboration.html">Collab</a> <span class="nav-sep">|</span>
+<a href="publications.html">Pubs</a> <span class="nav-sep">|</span>
+<a href="news.html">News</a> <span class="nav-sep">|</span>
+<a href="joinus.html">Join</a> <span class="nav-sep">|</span>
+<a href="contact.html">Contact</a>
+</div>
+
+<!-- Hero Section -->
+<div class="hero-banner">
+<div style="font-weight:bold;letter-spacing:3px;margin-bottom:15px;opacity:0.9;">2025 UAAT TAIWAN-CANADA AFFINITY PROGRAM</div>
+<h1 style="margin:0;font-size:3em;color:white;line-height:1.2;">Revitalising Taiwanese Hokkien through <br>Neural Language Technologies</h1>
+<p style="font-size:1.5em;margin-top:20px;opacity:0.95;font-weight:300;">A Global Collaborative Approach to Educational Learning and Multimodal AI</p>
+<div style="margin-top:30px;">
+<span style="background:rgba(255,255,255,0.2);padding:5px 15px;border-radius:20px;font-weight:bold;margin:0 5px;">🇹🇼 Taiwan</span>
+<span style="background:rgba(255,255,255,0.2);padding:5px 15px;border-radius:20px;font-weight:bold;margin:0 5px;">🇨🇦 Canada</span>
+<span style="background:rgba(255,255,255,0.2);padding:5px 15px;border-radius:20px;font-weight:bold;margin:0 5px;">🤖 GenAI</span>
+</div>
+</div>
+
+<div class="content-wrapper">
+
+<!-- Executive Summary -->
+<div style="max-width:1000px;margin:0 auto 60px auto;text-align:center;">
+<h2 style="color:#2c3e50;">Mission Statement</h2>
+<p style="font-size:1.1em;color:#555;line-height:1.8;">
+This multi-year project is co-led by <b>Prof. Richard Tzong-Han Tsai (Taiwan)</b> and <b>Prof. Annie En-Shiun Lee (Canada)</b> to combat the digital scarcity of low-resource languages. By uniting top institutions across both nations, we bridge the generational linguistic gap through high-quality machine translation resources and AI-powered multimodal learning tools like <b>ATAIGI</b>.
+</p>
+</div>
+
+<!-- Two Main Pillars -->
+<h2 class="section-title">Core Research Thrusts</h2>
+<div class="card-container">
+<div class="card card-blue">
+<h3 style="margin-top:0;color:#002A5C;">1. Improving Translation Quality</h3>
+<p><b>Goal:</b> Overcoming data scarcity and "translationese" errors in Sinitic languages (Hokkien, Cantonese, Wu).</p>
+<hr style="border:0;border-top:1px solid #eee;margin:15px 0;">
+<ul>
+<li><b>Hokkien MT Error Dataset:</b> Creating the first span-level error annotation dataset (MQM-derived) for fine-grained evaluation.</li>
+<li><b>Dual Translation Models:</b> Developing models optimized for Hokkien (HAN/POJ) ↔ Mandarin/English using <b>TAIDE-7B</b> and <b>LLaMA</b>.</li>
+<li><b>Corpus Standardization:</b> Leveraging orthographic similarities to standardize writing systems (HAN, POJ, HL).</li>
+<li><b>Tools:</b> Deployment of <i>TRANSLATIONCORRECT</i> framework for rigorous annotation.</li>
+</ul>
+</div>
+<div class="card card-red">
+<h3 style="margin-top:0;color:#c0392b;">2. AI-Powered Language Learning</h3>
+<p><b>Goal:</b> Creating an immersive, multimodal educational platform for language revitalization.</p>
+<hr style="border:0;border-top:1px solid #eee;margin:15px 0;">
+<ul>
+<li><b>ATAIGI App:</b> A unified open-source app integrating translation, context generation, and transliteration.</li>
+<li><b>Multimodal GenAI:</b> Generating contextual images (DALL-E 3) and audio to enhance vocabulary acquisition.</li>
+<li><b>3D Avatar Chatbot:</b> Integrating ASR (Whisper) and TTS for scenario-based roleplay and pronunciation practice.</li>
+<li><b>Pedagogical Validation:</b> Rigorous user studies with psycholinguistic measures.</li>
+</ul>
+</div>
+</div>
+
+<!-- Team Section -->
+<h2 class="section-title">The Collaborative Team</h2>
+<div class="card-container" style="align-items:flex-start;">
+<!-- Taiwan Team -->
+<div style="flex:1;min-width:300px;">
+<h3 style="text-align:center;color:#002A5C;margin-bottom:20px;">🇹🇼 Taiwan Team</h3>
+<div class="team-grid">
+<a href="pi.html" class="team-member">
+<span class="role-badge role-pi">Principal Investigator (Taiwan)</span>
+<div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Richard Tzong-Han Tsai</div>
+<div style="font-size:0.85em;color:#666;">National Central University / Academia Sinica</div>
+<div style="font-size:0.85em;margin-top:5px;"><i>NLP, Code-mixing, TAIDE Technical Lead</i></div>
+</a>
+<a href="https://psychology.ntu.edu.tw/en/faculty_teacher_detail.php?id=38" target="_blank" class="team-member">
+<span class="role-badge role-coi">Co-Investigator</span>
+<div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Chia-Lin Lee</div>
+<div style="font-size:0.85em;color:#666;">NTU Linguistics/Psychology</div>
+</a>
+<a href="https://lope.linguistics.ntu.edu.tw/" target="_blank" class="team-member">
+<span class="role-badge role-coi">Co-Investigator</span>
+<div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Shu-Kai Hsieh</div>
+<div style="font-size:0.85em;color:#666;">NTU Linguistics</div>
+</a>
+<a href="https://homepage.ntu.edu.tw/~chenhaochiu/" target="_blank" class="team-member">
+<span class="role-badge role-coi">Co-Investigator</span>
+<div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Chen-Hao Chiu</div>
+<div style="font-size:0.85em;color:#666;">NTU Linguistics</div>
+</a>
+<a href="https://speech.ee.ntu.edu.tw/~hylee/" target="_blank" class="team-member">
+<span class="role-badge role-collab">Technical Collaborator</span>
+<div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Hung-yi Lee</div>
+<div style="font-size:0.85em;color:#666;">NTU Electrical Engineering</div>
+</a>
+</div>
+</div>
+<!-- Canada Team -->
+<div style="flex:1;min-width:300px;">
+<h3 style="text-align:center;color:#c0392b;margin-bottom:20px;">🇨🇦 Canada Team</h3>
+<div class="team-grid">
+<a href="https://www.cs.toronto.edu/~ealee/" target="_blank" class="team-member">
+<span class="role-badge role-pi">Principal Investigator (Canada)</span>
+<div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Annie En-Shiun Lee</div>
+<div style="font-size:0.85em;color:#666;">University of Toronto / Ontario Tech U</div>
+</a>
+<a href="https://science.ontariotechu.ca/people/faculty/muhammad-usman.php" target="_blank" class="team-member">
+<span class="role-badge role-coi">Co-Investigator</span>
+<div style="font-weight:bold;font-size:1.1em;margin:5px 0;">Prof. Muhammad Usman</div>
+<div style="font-size:0.85em;color:#666;">Ontario Tech University</div>
+</a>
+</div>
+</div>
+</div>
+
+<!-- Milestones & Impact -->
+<h2 class="section-title">Impact & Milestones</h2>
+<div class="card" style="background:#fff8e1;border-top:5px solid #f1c40f;">
+<h3 style="margin-top:0;">🚀 Key Achievements</h3>
+<ul>
+<li><b>NAACL 2025 Demo Paper:</b> <i>"ATAIGI: An AI-Powered Multimodal Learning App Leveraging Generative Models for Low-Resource Taiwanese Hokkien"</i>. <a href="https://aclanthology.org/2025.naacl-demo.2/" target="_blank">View Paper</a></li>
+<li><b>LREC-COLING 2024:</b> <i>"Enhancing Taiwanese Hokkien Dual Translation by Exploring and Standardizing of Four Writing Systems"</i>.</li>
+<li><b>SINITIC MT ERROR Dataset:</b> Publicly released for the Sinitic NLP research community.</li>
+</ul>
+</div>
+
+<div style="text-align:center;margin-top:50px;color:#888;font-size:0.9em;">
+Supported by the <b>UAAT Taiwan Affinity Program</b> and the <b>National Science and Technology Council (NSTC)</b>.
+</div>
+
+<div style="text-align:center;margin-top:40px;">
+<a href="collaboration.html" style="background:#333;color:#fff;padding:12px 30px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.2);">← Back to Collaborations</a>
+</div>
+</div>
