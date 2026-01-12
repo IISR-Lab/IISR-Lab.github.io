@@ -165,15 +165,14 @@ body {
 
 <div class="nav-bar">
 <a href="index.html">Home</a> <span class="nav-sep">|</span>
+<a href="pi.html">PI</a> <span class="nav-sep">|</span>
 <a href="people.html">People</a> <span class="nav-sep">|</span>
-<a href="pi.html">PI Profile</a> <span class="nav-sep">|</span>
 <a href="research.html">Research</a> <span class="nav-sep">|</span>
 <a href="impact.html">Impact</a> <span class="nav-sep">|</span>
 <a href="collaboration.html">Collab</a> <span class="nav-sep">|</span>
 <a href="publications.html">Pubs</a> <span class="nav-sep">|</span>
 <a href="news.html">News</a> <span class="nav-sep">|</span>
-<a href="joinus.html">Join</a> <span class="nav-sep">|</span>
-<a href="contact.html">Contact</a>
+<a href="opportunities.html">Opportunities</a>
 </div>
 
 <div class="hero-banner">

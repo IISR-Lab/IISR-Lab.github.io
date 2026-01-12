@@ -8,7 +8,7 @@
 </style>
 
 
-[Home](index.html) ｜ [People](people.html) ｜ [Research](research.html) ｜ [Impact](impact.html) ｜ [Publications](publications.html) ｜ [News](news.html) ｜ [Join Us](joinus.html) ｜ [Contact](contact.html)
+[Home](index.html) ｜ [PI](pi.html) ｜[People](people.html) ｜ [Research](research.html) ｜ [Impact](impact.html) ｜  [Collab](collaboration.html) ｜[Pubs](publications.html) ｜ [News](news.html) ｜ [Opportunities](opportunities.html)
 
 ---
 

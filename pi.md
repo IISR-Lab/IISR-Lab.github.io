@@ -8,7 +8,7 @@
 </style>
 
 
-[Home](index.html) ｜ [People](people.html) ｜ [Research](research.html) ｜ [Impact](impact.html) ｜ [Publications](publications.html) ｜ [News](news.html) ｜ [Join Us](joinus.html) ｜ [Contact](contact.html)
+[Home](index.html) ｜ [PI](pi.html) ｜[People](people.html) ｜ [Research](research.html) ｜ [Impact](impact.html) ｜  [Collab](collaboration.html) ｜[Pubs](publications.html) ｜ [News](news.html) ｜ [Opportunities](opportunities.html)
 
 ---
 
@@ -101,7 +101,7 @@ His leadership extends to national-level talent cultivation and infrastructure. 
 ## 🤝 Professional Service
 
 ### Leadership
-- **President**, Taiwanese Association for Artificial Intelligence (TAAI) `2023–Present`
+- **President**, Taiwanese Association for Artificial Intelligence (TAAI) `2025–Present`
 - **Founder & Director**, Ministry of Education **AI CUP** Program Office `2018–Present`
 - **President**, Taiwan Association for Digital Humanities (TADH) `2022–2025`
 - **Standing Director**, The Association for Computational Linguistics and Chinese Language Processing (ACLCLP)

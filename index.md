@@ -8,7 +8,7 @@
 </style>
 
 
-[Home](index.html) ｜ [People](people.html) ｜ [Research](research.html) ｜ [Impact](impact.html) ｜ [Publications](publications.html) ｜ [News](news.html) ｜ [Join Us](joinus.html) ｜ [Contact](contact.html)
+[Home](index.html) ｜ [PI](pi.html) ｜[People](people.html) ｜ [Research](research.html) ｜ [Impact](impact.html) ｜  [Collab](collaboration.html) ｜[Pubs](publications.html) ｜ [News](news.html) ｜ [Opportunities](opportunities.html)
 
 ---
 
@@ -192,5 +192,5 @@ We collaborate with top-tier industry leaders and public sectors to deploy AI in
 <div style="display:flex; gap:15px; margin-top:20px;">
 <a href="publications.html" style="background:#f8f9fa; color:#333; padding:10px 20px; border-radius:5px; text-decoration:none; border:1px solid #ddd; font-weight:bold;">📚 Publications</a>
 <a href="people.html" style="background:#f8f9fa; color:#333; padding:10px 20px; border-radius:5px; text-decoration:none; border:1px solid #ddd; font-weight:bold;">👥 People</a>
-<a href="joinus.html" style="background:#3498db; color:#fff; padding:10px 20px; border-radius:5px; text-decoration:none; font-weight:bold;">🚀 Join Us</a>
+<a href="opportunities.html" style="background:#3498db; color:#fff; padding:10px 20px; border-radius:5px; text-decoration:none; font-weight:bold;">🚀 Join Us</a>
 </div>
