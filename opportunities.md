@@ -147,7 +147,7 @@ We actively collaborate with academia, hospitals, national institutions, and ind
 <h3 style="margin-top:0;">📍 Lab Location</h3>
 <p style="line-height:1.8;color:#555;">
 <b>National Central University</b><br>
-Engineering Building 5, Room 203 (工程五館 203室)<br>
+Engineering Building 5, Room A305 (工程五館 A305室)<br>
 No. 300, Zhongda Rd., Zhongli District,<br>
 Taoyuan City 32001, Taiwan
 </p>
