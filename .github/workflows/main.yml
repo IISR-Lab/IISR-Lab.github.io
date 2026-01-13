@@ -1,95 +1,135 @@
-name: Auto Sync from HackMD
-
-# 觸發條件：1. 每天早上 8 點自動跑  2. 手動按按鈕也可以跑
-on:
-  schedule:
-    - cron: '0 0 * * *' # UTC 0點 = 台灣早上8點
-  workflow_dispatch:
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
-
-      - name: Run Sync Script
+- name: Run Sync Script
         run: |
           import urllib.request
           import os
 
           # ---------------------------------------------
-          # 1. 設定你的 HackMD 頁面 ID 對照表
-          # 格式："GitHub上的檔名": "HackMD的ID"
-          # 請把下面的 ID 換成你真正的 ID！
+          # 1. 設定 HackMD 頁面 ID
           # ---------------------------------------------
           pages = {
-              "index":        "HJHiobaNZl",
-              "people":       "rJ_g3zp4We",
-              "research":     "rybtWmp4We",
-              "impact":       "S1V_vE1S-g",
-              "publications": "ByoaZXaVZe",
-              "news":         "rJ7SMmpEWe",
+              "index":               "HJHiobaNZl",
+              "people":              "rJ_g3zp4We",
+              "research":            "rybtWmp4We",
+              "impact":              "S1V_vE1S-g",
+              "publications":        "ByoaZXaVZe",
+              "news":                "rJ7SMmpEWe",
               "opportunities":       "ByPcG7aEWg",
-              "ai-mandarin-partner":      "S157R4Jrbg",
-              "pi":      "ByDTXybrbg",
-              "course_dhta":      "B1zA7BZrWx",
-              "tap":      "SylDrAbBZx",
-              "collaboration":      "BJzFlYGrWl"
+              "ai-mandarin-partner": "S157R4Jrbg",
+              "pi":                  "ByDTXybrbg",
+              "course_dhta":         "B1zA7BZrWx",
+              "tap":                 "SylDrAbBZx",
+              "collaboration":       "BJzFlYGrWl"
           }
 
-          # 你的 HackMD 用戶名 (網址 @ 後面那一串)
+          # ---------------------------------------------
+          # 2. 設定 SEO 資訊 (針對每一頁設定不同的標題與描述)
+          # ---------------------------------------------
+          seo_config = {
+              "pi": {
+                  "title": "Richard Tzong-Han Tsai (蔡宗翰) - AI界李白 | LLM Construction Expert",
+                  "desc": "Prof. Richard Tzong-Han Tsai, known as 'Li Bai of the AI World', is a leading LLM Construction Expert and Digital Humanities Pioneer. Founder of AI CUP and Co-PI of TAIDE.",
+                  "keywords": "Richard Tzong-Han Tsai, 蔡宗翰, AI界李白, LLM Construction, AI專家, 數位人文, TAIDE, AI CUP"
+              },
+              "index": {
+                  "title": "IISR Lab - Intelligent Information Service Research | NCU",
+                  "desc": "IISR Lab led by Prof. Richard Tzong-Han Tsai. Focusing on Localized LLMs, BioNLP, and Digital Humanities.",
+                  "keywords": "IISR Lab, NCU, AI Research, BioNLP, LLM"
+              },
+              # 其他頁面若沒設定，會使用預設值
+              "default": {
+                  "title": "IISR Lab - Richard Tzong-Han Tsai",
+                  "desc": "Research Lab at National Central University, Taiwan.",
+                  "keywords": "AI, NLP, Machine Learning"
+              }
+          }
+
+          # ---------------------------------------------
+          # 3. 定義 JSON-LD 結構化資料 (專門給 PI 頁面用)
+          # ---------------------------------------------
+          pi_json_ld = """
+          <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Richard Tzong-Han Tsai",
+            "alternateName": ["蔡宗翰", "AI界李白"],
+            "jobTitle": ["Professor", "LLM Expert", "President of TAAI"],
+            "affiliation": { "@type": "Organization", "name": "National Central University" },
+            "url": "https://YourGithubPageURL/pi.html"
+          }
+          </script>
+          """
+
           hackmd_user = "@o_SxVezFSQGGbCkSyIX1qg"
 
-          # 這是我們要自動插入的 CSS 樣式
+          # 這是共用的 CSS
           css_style = """
           <style>
-              body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 1000px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
-              a { color: #0366d6; text-decoration: none; }
-              a:hover { text-decoration: underline; }
-              table { width: 100%; border-collapse: collapse; }
-              img { max-width: 100%; }
+              /* 這裡放您原本的 CSS，或是 HackMD 修正樣式 */
+              body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; }
+              /* 確保 HackMD 內容不會跑版 */
+              .markdown-body { max-width: 100% !important; padding: 0 !important; }
           </style>
           """
 
           # 開始處理每一個檔案
           for filename, md_id in pages.items():
-              print(f"Downloading {filename} from {md_id}...")
+              print(f"Processing {filename}...")
               
-              # 下載 HackMD 內容
               url = f"https://hackmd.io/{hackmd_user}/{md_id}/download"
               try:
                   with urllib.request.urlopen(url) as response:
-                      content = response.read().decode('utf-8')
+                      # 取得 HackMD 的內容 (這部分視為 Body)
+                      body_content = response.read().decode('utf-8')
                   
-                  # 自動替換連結：把 HackMD 的網址換成 GitHub 的 .html
+                  # 替換連結
                   for f_name, f_id in pages.items():
-                      # 替換完整網址
-                      content = content.replace(f"https://hackmd.io/{hackmd_user}/{f_id}", f"{f_name}.html")
-                      # 替換短網址 (有些 HackMD 連結是短的)
-                      content = content.replace(f"https://hackmd.io/{f_id}", f"{f_name}.html")
+                      body_content = body_content.replace(f"https://hackmd.io/{hackmd_user}/{f_id}", f"{f_name}.html")
+                      body_content = body_content.replace(f"https://hackmd.io/{f_id}", f"{f_name}.html")
 
-                  # 在最上面插入 CSS
-                  final_content = css_style + "\n\n" + content
+                  # 取得該頁面的 SEO 設定，如果沒有就用 default
+                  seo = seo_config.get(filename, seo_config["default"])
                   
-                  # 存檔
-                  with open(f"{filename}.md", "w", encoding="utf-8") as f:
-                      f.write(final_content)
+                  # 如果是 PI 頁面，加入 JSON-LD
+                  extra_head = pi_json_ld if filename == "pi" else ""
+
+                  # 組合完整的 HTML
+                  full_html = f"""
+                  <!DOCTYPE html>
+                  <html lang="en">
+                  <head>
+                      <meta charset="UTF-8">
+                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
                       
+                      <!-- SEO Meta Tags -->
+                      <title>{seo['title']}</title>
+                      <meta name="description" content="{seo['desc']}">
+                      <meta name="keywords" content="{seo['keywords']}">
+                      <meta name="author" content="Richard Tzong-Han Tsai">
+                      
+                      <!-- Open Graph -->
+                      <meta property="og:title" content="{seo['title']}">
+                      <meta property="og:description" content="{seo['desc']}">
+                      <meta property="og:type" content="website">
+                      
+                      {extra_head}
+                      {css_style}
+                  </head>
+                  <body>
+                      {body_content}
+                  </body>
+                  </html>
+                  """
+                  
+                  # 存成 .html (重要！這樣瀏覽器才會把它當網頁渲染，且 SEO 才會生效)
+                  with open(f"{filename}.html", "w", encoding="utf-8") as f:
+                      f.write(full_html)
+                      
+                  # 如果原本有 .md 檔案，可以選擇刪除，避免混淆
+                  if os.path.exists(f"{filename}.md"):
+                      os.remove(f"{filename}.md")
+
               except Exception as e:
-                  print(f"Error downloading {filename}: {e}")
+                  print(f"Error processing {filename}: {e}")
 
         shell: python
-
-      - name: Commit and Push
-        run: |
-          git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'actions@github.com'
-          git add *.md
-          # 如果有變更才 Commit，沒變更就不動作
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-sync from HackMD" && git push)
