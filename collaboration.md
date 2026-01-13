@@ -234,7 +234,8 @@ A multi-year collaboration between <b>IISR Lab (Taiwan)</b> and the <b>Universit
 <li><b>Focus:</b> Neural Machine Translation, Multimodal Learning</li>
 <li><b>Achievements:</b> NAACL 2025 System Demonstration, COLING 2024</li>
 </ul>
-<a href="https://aclanthology.org/2025.naacl-demo.2/" target="_blank" class="btn-primary">Explore TAP Project →</a>
+<!-- 連結已更新為 tap.html -->
+<a href="tap.html" class="btn-primary">Explore TAP Project →</a>
 </div>
 </div>
 
