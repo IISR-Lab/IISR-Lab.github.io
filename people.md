@@ -245,6 +245,16 @@ Researching methods for end-to-end pretraining of LLMs without pre-tokenization,
 <a href="https://orcid.org/0000-0003-4074-9094" target="_blank" style="font-size:0.85em; color:#A6CE39; text-decoration:none; font-weight:bold; margin-top:5px; display:inline-block;">🆔 ORCID</a>
 </div>
 </div>
+
+<!-- Connyn Kang-Lin Chang (New) -->
+<div class="person-card">
+<div class="person-name">Connyn Kang-Lin Chang</div>
+<span class="person-role">Research Topic: Multimodal LLMs in Finance</span>
+<div class="person-desc">
+<b>Current Position:</b> Vice President, CTBC Bank (中國信託銀行)<br>
+Kang-Lin focuses on applying multimodal LLMs to global financial markets by integrating deep learning, machine learning, and financial time-series data. She explores combining market data, textual disclosures, and macroeconomic signals to enhance trading strategies, risk management, and cross-asset decision-making.
+</div>
+</div>
 </div>
 
 <!-- Alumni Section -->
