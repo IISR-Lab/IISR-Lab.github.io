@@ -8,9 +8,95 @@
 </style>
 
 
-[Home](index.html) ｜ [PI](pi.html) ｜[People](people.html) ｜ [Research](research.html) ｜ [Impact](impact.html) ｜  [Collab](collaboration.html) ｜[Pubs](publications.html) ｜ [News](news.html) ｜ [Opportunities](opportunities.html)
+<!-- 全域樣式與重置 -->
+<style>
+/* 強制重置 HackMD 預設樣式，確保全寬 */
+.container-fluid, #doc, .markdown-body {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.custom-body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
----
+/* 導覽列 */
+.nav-bar {
+    background: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    font-size: 16px;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow-x: auto;
+}
+.nav-bar a {
+    color: #0366d6;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: 500;
+}
+.nav-bar a:hover {
+    background-color: #f0f7ff;
+    border-radius: 4px;
+}
+.nav-sep { color: #ccc; font-size: 14px; }
+
+/* 內容容器 */
+.content-wrapper {
+    max-width: 1100px; /* 首頁稍微寬一點以容納三欄佈局 */
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* 標題樣式 */
+.section-title {
+    text-align: center;
+    margin: 50px 0 30px 0;
+    font-size: 1.8em;
+    color: #2c3e50;
+    font-weight: bold;
+    position: relative;
+}
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #c0392b;
+    margin: 15px auto 0;
+}
+
+/* 列表與文字樣式優化 */
+ul { margin-top: 0; }
+li { margin-bottom: 5px; }
+</style>
+
+<div class="custom-body">
+
+<!-- 導覽列 -->
+<div class="nav-bar">
+<a href="index.html">Home</a> <span class="nav-sep">|</span>
+<a href="pi.html">PI</a> <span class="nav-sep">|</span>
+<a href="people.html">People</a> <span class="nav-sep">|</span>
+<a href="research.html">Research</a> <span class="nav-sep">|</span>
+<a href="impact.html">Impact</a> <span class="nav-sep">|</span>
+<a href="collaboration.html">Collab</a> <span class="nav-sep">|</span>
+<a href="publications.html">Pubs</a> <span class="nav-sep">|</span>
+<a href="news.html">News</a> <span class="nav-sep">|</span>
+<a href="opportunities.html">Opportunities</a>
+</div>
+
+<div class="content-wrapper">
 
 <!-- Hero Section: 實驗室願景 -->
 <table style="width:100%; border:none; border-collapse:collapse; margin-bottom:40px; background:linear-gradient(to right, #f8f9fa, #fff); border-radius:8px;">
@@ -28,7 +114,7 @@ We develop <b>practical and verifiable AI systems</b>, combining <b>Retrieval (R
 </table>
 
 <!-- Three Pillars: LLM (左) -> Bio (中) -> DH (右) -->
-<table style="width:100%; border:none; border-collapse:separate; border-spacing:15px; margin-bottom:40px;">
+<table style="width:100%; border:none; border-collapse:separate; border-spacing:15px; margin-bottom:40px; table-layout: fixed;">
 <tr style="border:none;">
 
 <!-- Pillar 1 (Left): Localized LLMs -->
@@ -89,13 +175,12 @@ Historical GIS, context-aware representation, and label-free map understanding.
 <a href="research.html" style="text-decoration:none; font-weight:bold; color:#3498db;">Explore Research Details →</a>
 </div>
 
----
-
-## ✨ Selected Highlights
+<!-- Selected Highlights -->
+<h2 class="section-title">✨ Selected Highlights</h2>
 
 <table style="width:100%; border:none; border-collapse:collapse; margin-bottom:30px;">
 <tr style="border:none;">
-<td style="border:none; padding:8px 0; vertical-align:top;">
+<td style="border:none; padding:8px 0; vertical-align:top; width: 120px;">
 <span style="background:#333; color:#fff; padding:3px 8px; border-radius:4px; font-size:0.75em; margin-right:10px; white-space:nowrap;">ACL 2024</span>
 </td>
 <td style="border:none; padding:8px 0;">
@@ -136,11 +221,9 @@ Historical GIS, context-aware representation, and label-free map understanding.
 </tr>
 </table>
 
----
-
-## 🌏 Impact & Partners
-
-We collaborate with top-tier industry leaders and public sectors to deploy AI in real-world scenarios.
+<!-- Impact & Partners -->
+<h2 class="section-title">🌏 Impact & Partners</h2>
+<p style="text-align:center; color:#666; margin-bottom:30px;">We collaborate with top-tier industry leaders and public sectors to deploy AI in real-world scenarios.</p>
 
 <table style="width:100%; border:none; border-collapse:collapse; margin-top:20px; margin-bottom:30px;">
 <tr style="border:none;">
@@ -173,24 +256,29 @@ We collaborate with top-tier industry leaders and public sectors to deploy AI in
 </tr>
 </table>
 
----
-
-## 📢 Latest News
-
-- **2025** ｜ 🏆 **BioASQ Champion** (Six consecutive years, 2020–2025)
-- **2025** ｜ 🎖️ **NSTC Future Tech Award**
-- **2025** ｜ 📄 *npj Digital Medicine* (Q1): LLMs for clinical de-id accepted.
-- **2025** ｜ 📄 *IJGIS* (Q1): Historical map understanding via UDA accepted.
-- **2024** ｜ 📄 **ACL 2024**: Chat Vector accepted.
-- **2024** ｜ 📄 **EMNLP 2024**: TWBias accepted.
-
-[View All News →](news.html)
-
----
-
-## 🔗 Quick Links
-<div style="display:flex; gap:15px; margin-top:20px;">
-<a href="publications.html" style="background:#f8f9fa; color:#333; padding:10px 20px; border-radius:5px; text-decoration:none; border:1px solid #ddd; font-weight:bold;">📚 Publications</a>
-<a href="people.html" style="background:#f8f9fa; color:#333; padding:10px 20px; border-radius:5px; text-decoration:none; border:1px solid #ddd; font-weight:bold;">👥 People</a>
-<a href="opportunities.html" style="background:#3498db; color:#fff; padding:10px 20px; border-radius:5px; text-decoration:none; font-weight:bold;">🚀 Join Us</a>
+<!-- Latest News -->
+<h2 class="section-title">📢 Latest News</h2>
+<div style="background:#fff; padding:20px; border-radius:8px; border:1px solid #eee; box-shadow:0 2px 4px rgba(0,0,0,0.03);">
+<ul style="list-style-type: none; padding-left: 0;">
+<li style="margin-bottom:10px;"><strong>2025</strong> ｜ 🏆 <strong>BioASQ Champion</strong> (Six consecutive years, 2020–2025)</li>
+<li style="margin-bottom:10px;"><strong>2025</strong> ｜ 🎖️ <strong>NSTC Future Tech Award</strong></li>
+<li style="margin-bottom:10px;"><strong>2025</strong> ｜ 📄 <em>npj Digital Medicine</em> (Q1): LLMs for clinical de-id accepted.</li>
+<li style="margin-bottom:10px;"><strong>2025</strong> ｜ 📄 <em>IJGIS</em> (Q1): Historical map understanding via UDA accepted.</li>
+<li style="margin-bottom:10px;"><strong>2024</strong> ｜ 📄 <strong>ACL 2024</strong>: Chat Vector accepted.</li>
+<li style="margin-bottom:10px;"><strong>2024</strong> ｜ 📄 <strong>EMNLP 2024</strong>: TWBias accepted.</li>
+</ul>
+<div style="margin-top:15px;">
+<a href="news.html" style="color:#0366d6; font-weight:bold; text-decoration:none;">View All News →</a>
 </div>
+</div>
+
+<!-- Quick Links -->
+<h2 class="section-title">🔗 Quick Links</h2>
+<div style="display:flex; gap:15px; margin-top:20px; justify-content:center; flex-wrap:wrap;">
+<a href="publications.html" style="background:#f8f9fa; color:#333; padding:12px 25px; border-radius:30px; text-decoration:none; border:1px solid #ddd; font-weight:bold; transition:0.2s;">📚 Publications</a>
+<a href="people.html" style="background:#f8f9fa; color:#333; padding:12px 25px; border-radius:30px; text-decoration:none; border:1px solid #ddd; font-weight:bold; transition:0.2s;">👥 People</a>
+<a href="opportunities.html" style="background:#3498db; color:#fff; padding:12px 25px; border-radius:30px; text-decoration:none; font-weight:bold; box-shadow:0 4px 10px rgba(52, 152, 219, 0.3);">🚀 Join Us</a>
+</div>
+
+</div> <!-- content-wrapper end -->
+</div> <!-- custom-body end -->
