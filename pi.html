@@ -44,7 +44,7 @@
     padding: 0 !important;
     margin: 0 !important;
 }
-.custom-body {
+body, .custom-body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: #333;
@@ -124,7 +124,20 @@ li { margin-bottom: 8px; }
     color: #c0392b;
     font-weight: bold;
 }
+
+/* 中文簡介區塊樣式 */
+.chinese-bio-box {
+    background: #fff;
+    border: 1px solid #eee;
+    border-left: 5px solid #c0392b;
+    padding: 25px;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
 </style>
+</head>
+<body>
 
 <div class="custom-body">
 
@@ -171,7 +184,7 @@ li { margin-bottom: 8px; }
 <div><b>Joint Research Fellow</b>, RCHSS, Academia Sinica (中央研究院)</div>
 </div>
 
-<!-- 簡介區 -->
+<!-- 簡介區：強調 AI界李白、LLM建構、AI CUP -->
 <p style="line-height:1.7; color:#444;">
 Widely known in the media as the <b>"Li Bai of the AI World" (AI界李白)</b>, Prof. Richard Tzong-Han Tsai is a leading authority in <b>LLM Construction</b> and <b>Interdisciplinary AI</b>. He specializes in the full lifecycle of model development, mastering data preparation, model training, and benchmarking.
 </p>
@@ -193,6 +206,18 @@ His leadership extends to national infrastructure as the Co-PI of the <b>TAIDE P
 </td>
 </tr>
 </table>
+
+<!-- 中文簡介區塊 -->
+<div class="chinese-bio-box">
+<h2 style="margin-top:0; color:#c0392b; font-size:1.5em; border-bottom:1px solid #eee; padding-bottom:10px; margin-bottom:15px;">中文簡介 (Chinese Bio)</h2>
+<p style="color:#444; line-height:1.8; margin:0;">
+<b>蔡宗翰教授（Richard Tzong-Han Tsai）</b>，現任國立中央大學資工系教授及中華民國人工智慧學會（TAAI）理事長，被媒體譽為<b>「AI界李白」</b>。他擅長將複雜的 AI 技術以淺顯易懂的方式傳遞給大眾，並致力於連結人文與科技領域。
+<br><br>
+蔡教授是台灣少數具備<b>「大語言模型建構（LLM Construction）」</b>實戰經驗的專家，目前擔任國科會 <b>TAIDE 計畫</b>（台灣可信任生成式 AI 對話引擎）共同主持人，負責模型訓練與評測。此外，他於 2018 年創辦教育部 <b>AI CUP</b>，將其打造為台灣規模最大的 AI 競賽平台，每年培育數千名 AI 人才。
+<br><br>
+他的研究團隊在國際上表現卓越，連續六年（2020–2025）獲得 <b>BioASQ 國際生醫問答挑戰賽冠軍</b>。蔡教授同時也是多本暢銷科普書籍的作者，包括《寫給中學生看的AI課》（獲吳大猷科普著作獎—青少年特別獎）與《寫給小學生看的AI課》。
+</p>
+</div>
 
 <!-- Professional Experience -->
 <h2 class="section-title">🏫 Professional Experience</h2>
@@ -230,9 +255,9 @@ His leadership extends to national infrastructure as the Co-PI of the <b>TAIDE P
 <li><strong>2025</strong>: <strong>Golden Bell Award Nominee</strong> (Natural Science Documentary Host)</li>
 <li><strong>2025</strong>: <strong>2nd Place, CTCI AI Creative Competition</strong> (中技社 AI 創意競賽第二名)</li>
 <li><strong>2024</strong>: <strong>Taiwan AI 20 (台灣 AI 20)</strong>, <em>CommonWealth Magazine</em> (天下雜誌)</li>
+<li><strong>2024</strong>: <strong>Wu Ta-You Popular Science Award (Youth Special Prize)</strong> (吳大猷科普著作獎—青少年特別獎) — for <em>AI Lessons for Middle Schoolers</em></li>
 <li><strong>2023</strong>: <strong>AI Person of the Year (AI 風雲人物)</strong>, <em>Mirror Media</em> (鏡周刊)</li>
 <li><strong>2020–2025</strong>: <strong>BioASQ Challenge Champion</strong> (6 consecutive years), NCSR (EU)</li>
-<li><strong>2024</strong>: <strong>Wu Ta-You Popular Science Award (Youth Special Prize)</strong> (吳大猷科普著作獎—青少年特別獎)</li>
 <li><strong>2023, 2024</strong>: <strong>Google Research Award</strong></li>
 <li><strong>2023–2025</strong>: Research Award, NSTC & Academia Sinica RCHSS</li>
 <li><strong>2022, 2024</strong>: Best Master Thesis Advisor Award, ACLCLP</li>
@@ -319,5 +344,7 @@ His leadership extends to national infrastructure as the Co-PI of the <b>TAIDE P
 
 </div> <!-- content-wrapper end -->
 </div> <!-- custom-body end -->
+</body>
+</html>
 </body>
 </html>
