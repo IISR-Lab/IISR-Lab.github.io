@@ -94,6 +94,7 @@
     margin: 15px auto 0;
 }
 
+/* 卡片容器設定 */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -106,7 +107,7 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     padding: 30px;
     flex: 1;
-    min-width: 300px;
+    min-width: 280px; /* 稍微縮小最小寬度以確保三欄並排 */
     border-top: 5px solid #ddd;
 }
 .project-img {
@@ -141,7 +142,7 @@
     text-align: center;
     font-size: 0.9em;
     color: #666;
-    margin-bottom: 30px; /* 增加照片間距 */
+    margin-bottom: 30px;
     font-style: italic;
 }
 
@@ -270,7 +271,10 @@ Teaching students how to curate datasets to fine-tune open-source models (like L
 
 <!-- 2025 Projects -->
 <h3 style="color:#2c3e50;border-bottom:2px solid #eee;padding-bottom:10px;margin-bottom:20px;"><span class="year-badge">2025</span> RAG & Agentic Workflows</h3>
+
+<!-- 這裡的 div 和下方的 div 都嚴格靠左，避免 HackMD 誤判 -->
 <div class="card-container">
+<!-- Project 1 -->
 <div class="card" style="border-top-color:#3498db;">
 <img src="https://hackmd.io/_uploads/BkSqgIlQbx.png" alt="Project 1" class="project-img">
 <h4 style="margin:0 0 5px 0;color:#2c3e50;">History Exam Generator</h4>
@@ -279,6 +283,7 @@ Teaching students how to curate datasets to fine-tune open-source models (like L
 An AI system that generates realistic history exam questions, mimicking the style and logic of official exams.
 </div>
 </div>
+<!-- Project 2 -->
 <div class="card" style="border-top-color:#3498db;">
 <img src="https://hackmd.io/_uploads/BJrZZLxQWl.png" alt="Project 2" class="project-img">
 <h4 style="margin:0 0 5px 0;color:#2c3e50;">Linguistics Olympiad Solver</h4>
@@ -287,6 +292,7 @@ An AI system that generates realistic history exam questions, mimicking the styl
 Modeling the logical flow to solve complex Linguistics Olympiad puzzles using Agentic workflows.
 </div>
 </div>
+<!-- Project 3 -->
 <div class="card" style="border-top-color:#3498db;">
 <img src="https://hackmd.io/_uploads/rk8ObUlXbx.png" alt="Project 3" class="project-img">
 <h4 style="margin:0 0 5px 0;color:#2c3e50;">Idiom Adventure Game</h4>
