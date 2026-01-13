@@ -8,7 +8,71 @@
 </style>
 
 
-<!-- 全域樣式與重置 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ==========================================================================
+     SEO 核心優化區 (搜尋引擎看這裡，訪客看不到)
+     這裡保留豐富的中文關鍵字，確保搜尋 "AI界李白"、"文理兼具" 都能找到此頁
+     ========================================================================== -->
+<title>Richard Tzong-Han Tsai (蔡宗翰) - AI & LLM Construction Expert</title>
+
+<meta name="description" content="Prof. Richard Tzong-Han Tsai (蔡宗翰), widely known as 'Li Bai of the AI World' (AI界李白), is a leading expert in LLM Construction, Data Preparation, and Model Benchmarking. He bridges Humanities and Sciences (文理兼具) and is dedicated to AI Education.">
+
+<meta name="keywords" content="Richard Tzong-Han Tsai, 蔡宗翰, AI界李白, Li Bai of AI, 大語言模型建構專家, LLM Construction, AI專家, 數位人文, 跨領域專家, 文理兼具, AI教育, TAIDE, AI CUP, 中央大學">
+
+<meta name="author" content="Richard Tzong-Han Tsai">
+
+<!-- Open Graph (社群分享優化) -->
+<meta property="og:title" content="Richard Tzong-Han Tsai (蔡宗翰) - AI界李白 | LLM Expert">
+<meta property="og:description" content="Leading expert in End-to-end LLM Development and Digital Humanities. President of TAAI.">
+<meta property="og:image" content="https://hackmd.io/_uploads/HkpGJ4TVWl.jpg">
+<meta property="og:url" content="https://YourWebsiteURL.com/pi.html">
+<meta property="og:type" content="profile">
+
+<!-- Google 結構化資料 (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Richard Tzong-Han Tsai",
+  "alternateName": ["蔡宗翰", "AI界李白", "Li Bai of the AI World"],
+  "jobTitle": [
+    "Professor", 
+    "LLM Construction Expert", 
+    "AI Expert", 
+    "Digital Humanities Expert", 
+    "Educator",
+    "President of TAAI"
+  ],
+  "affiliation": {
+    "@type": "Organization",
+    "name": "National Central University"
+  },
+  "alumniOf": "National Taiwan University",
+  "url": "https://YourWebsiteURL.com/pi.html",
+  "image": "https://hackmd.io/_uploads/HkpGJ4TVWl.jpg",
+  "sameAs": [
+    "https://scholar.google.com/citations?user=iDz3gJ4AAAAJ&hl=zh-TW",
+    "https://www.linkedin.com/in/thtsai/",
+    "https://www.facebook.com/ailibai"
+  ],
+  "knowsAbout": [
+    "LLM Construction",
+    "Data Preparation",
+    "Model Training",
+    "Benchmarking",
+    "Digital Humanities", 
+    "Natural Language Processing",
+    "AI Education"
+  ]
+}
+</script>
+
+<!-- 全域樣式 -->
 <style>
 /* 強制重置 HackMD 預設樣式，確保全寬 */
 .container-fluid, #doc, .markdown-body {
@@ -16,7 +80,7 @@
     padding: 0 !important;
     margin: 0 !important;
 }
-.custom-body {
+body, .custom-body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: #333;
@@ -91,6 +155,8 @@
 ul { margin-top: 0; padding-left: 20px; }
 li { margin-bottom: 8px; }
 </style>
+</head>
+<body>
 
 <div class="custom-body">
 
@@ -113,7 +179,7 @@ li { margin-bottom: 8px; }
 <table style="width:100%; border:none; border-collapse:collapse; margin-bottom:40px;">
 <tr style="border:none; background:transparent;">
 <td style="width:220px; vertical-align:top; border:none; padding-right:30px;">
-<img src="https://hackmd.io/_uploads/HkpGJ4TVWl.jpg" alt="Richard Tsai" style="width:100%; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.15); margin-bottom:15px;">
+<img src="https://hackmd.io/_uploads/HkpGJ4TVWl.jpg" alt="Prof. Richard Tzong-Han Tsai (蔡宗翰)" style="width:100%; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.15); margin-bottom:15px;">
 <div style="font-size:0.9em; color:#555; line-height:1.6;">
 <div style="margin-bottom:5px;">📍 <b>Office:</b><br>Eng. Bldg 5, R203</div>
 <div style="margin-bottom:5px;">📞 <b>Phone:</b><br>+886-3-4227151<br>ext. 35323</div>
@@ -136,12 +202,15 @@ li { margin-bottom: 8px; }
 <div><b>Joint Professor</b>, Graduate Inst. of Linguistics, National Taiwan University (台灣大學)</div>
 <div><b>Joint Research Fellow</b>, RCHSS, Academia Sinica (中央研究院)</div>
 </div>
+
+<!-- 簡介區：純英文，流暢專業，去除夾雜的中文 -->
 <p style="line-height:1.7; color:#444;">
-<b>Prof. Richard Tzong-Han Tsai</b> is a leading figure in Taiwan's AI landscape. He currently serves as the <b>President of the Taiwanese Association for Artificial Intelligence (TAAI)</b>.
+Widely known in the media as the <b>"Li Bai of the AI World"</b>, Prof. Richard Tzong-Han Tsai is a leading authority in <b>LLM Construction</b> and <b>Interdisciplinary AI</b>. He specializes in the full lifecycle of model development, mastering data preparation, model training, and benchmarking.
 </p>
 <p style="line-height:1.7; color:#444;">
-His leadership extends to national-level talent cultivation and infrastructure. He <b>founded the <a href="https://aicup.tw/" target="_blank" style="color:#0366d6;">AI CUP</a> in 2018</b>, growing it into Taiwan's largest AI competition with <b>3,000–5,000 annual participants</b>. Additionally, he serves as the <b>Co-PI of the TAIDE Project</b> (Taiwan's sovereign LLM) and leads the <b>AI Mandarin Partner & Write AI Projects</b>. His research team is globally renowned for winning the <b>BioASQ international challenge for six consecutive years (2020–2025)</b>.
+Celebrated for his unique ability to bridge the humanities and sciences, Prof. Tsai is a pioneer in <b>Digital Humanities</b> and an educator dedicated to AI literacy. He currently serves as the <b>President of the Taiwanese Association for Artificial Intelligence (TAAI)</b>. His leadership extends to national infrastructure as the Co-PI of the <b>TAIDE Project</b> (Taiwan's sovereign LLM) and the founder of the <b>AI CUP</b>. His research team has achieved global recognition, winning the <b>BioASQ international challenge</b> for six consecutive years (2020–2025).
 </p>
+
 <div style="margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
 <h3 style="margin:0 0 15px 0; font-size:1.2em; color:#2c3e50;">🎓 Education</h3>
 <ul style="margin:0; padding-left:20px; color:#555; line-height:1.6;">
@@ -274,3 +343,5 @@ His leadership extends to national-level talent cultivation and infrastructure. 
 
 </div> <!-- content-wrapper end -->
 </div> <!-- custom-body end -->
+</body>
+</html>
