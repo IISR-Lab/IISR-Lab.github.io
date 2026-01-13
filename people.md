@@ -246,7 +246,7 @@ Researching methods for end-to-end pretraining of LLMs without pre-tokenization,
 </div>
 </div>
 
-<!-- Connyn Kang-Lin Chang (New) -->
+<!-- Connyn Kang-Lin Chang -->
 <div class="person-card">
 <div class="person-name">Connyn Kang-Lin Chang</div>
 <span class="person-role">Research Topic: Multimodal LLMs in Finance</span>
@@ -262,7 +262,7 @@ Kang-Lin focuses on applying multimodal LLMs to global financial markets by inte
 <div class="alumni-box">
 <p style="margin:0;">
 Our alumni have become key contributors in Taiwan’s AI ecosystem, joining R&D teams at 
-<b style="color:#2c3e50;">Google, TSMC, MediaTek, Delta Electronics, Quanta</b>, and 
+<b style="color:#2c3e50;">Google, Qualcomm, TSMC, MediaTek, Delta Electronics, Quanta</b>, and 
 <b style="color:#2c3e50;">Chunghwa Telecom Research Institute</b>. 
 Many are also pursuing further studies abroad at top institutions such as 
 <b style="color:#c0392b;">CMU, Cornell, UIUC, and NYU</b>.
