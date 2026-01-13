@@ -15,62 +15,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- ==========================================================================
-     SEO 核心優化區 (搜尋引擎看這裡，訪客看不到)
-     這裡保留豐富的中文關鍵字，確保搜尋 "AI界李白"、"文理兼具" 都能找到此頁
+     SEO 核心優化區 (HackMD 匯出或被搜尋時會用到)
      ========================================================================== -->
-<title>Richard Tzong-Han Tsai (蔡宗翰) - AI & LLM Construction Expert</title>
+<title>Richard Tzong-Han Tsai (蔡宗翰) - AI界李白 | LLM Construction Expert</title>
 
-<meta name="description" content="Prof. Richard Tzong-Han Tsai (蔡宗翰), widely known as 'Li Bai of the AI World' (AI界李白), is a leading expert in LLM Construction, Data Preparation, and Model Benchmarking. He bridges Humanities and Sciences (文理兼具) and is dedicated to AI Education.">
+<meta name="description" content="Prof. Richard Tzong-Han Tsai (蔡宗翰), known as 'Li Bai of the AI World', is the founder of AI CUP and a leading LLM Construction Expert. He bridges Humanities and Sciences and leads the TAIDE project.">
 
-<meta name="keywords" content="Richard Tzong-Han Tsai, 蔡宗翰, AI界李白, Li Bai of AI, 大語言模型建構專家, LLM Construction, AI專家, 數位人文, 跨領域專家, 文理兼具, AI教育, TAIDE, AI CUP, 中央大學">
+<meta name="keywords" content="Richard Tzong-Han Tsai, 蔡宗翰, AI界李白, AI CUP, 大語言模型建構專家, LLM Construction, AI專家, 數位人文, 跨領域專家, 文理兼具, TAIDE, 中央大學">
 
 <meta name="author" content="Richard Tzong-Han Tsai">
-
-<!-- Open Graph (社群分享優化) -->
-<meta property="og:title" content="Richard Tzong-Han Tsai (蔡宗翰) - AI界李白 | LLM Expert">
-<meta property="og:description" content="Leading expert in End-to-end LLM Development and Digital Humanities. President of TAAI.">
-<meta property="og:image" content="https://hackmd.io/_uploads/HkpGJ4TVWl.jpg">
-<meta property="og:url" content="https://YourWebsiteURL.com/pi.html">
-<meta property="og:type" content="profile">
-
-<!-- Google 結構化資料 (Schema.org) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Richard Tzong-Han Tsai",
-  "alternateName": ["蔡宗翰", "AI界李白", "Li Bai of the AI World"],
-  "jobTitle": [
-    "Professor", 
-    "LLM Construction Expert", 
-    "AI Expert", 
-    "Digital Humanities Expert", 
-    "Educator",
-    "President of TAAI"
-  ],
-  "affiliation": {
-    "@type": "Organization",
-    "name": "National Central University"
-  },
-  "alumniOf": "National Taiwan University",
-  "url": "https://YourWebsiteURL.com/pi.html",
-  "image": "https://hackmd.io/_uploads/HkpGJ4TVWl.jpg",
-  "sameAs": [
-    "https://scholar.google.com/citations?user=iDz3gJ4AAAAJ&hl=zh-TW",
-    "https://www.linkedin.com/in/thtsai/",
-    "https://www.facebook.com/ailibai"
-  ],
-  "knowsAbout": [
-    "LLM Construction",
-    "Data Preparation",
-    "Model Training",
-    "Benchmarking",
-    "Digital Humanities", 
-    "Natural Language Processing",
-    "AI Education"
-  ]
-}
-</script>
 
 <!-- 全域樣式 -->
 <style>
@@ -154,6 +107,12 @@ body, .custom-body {
 /* 列表樣式優化 */
 ul { margin-top: 0; padding-left: 20px; }
 li { margin-bottom: 8px; }
+
+/* 強調文字 */
+.highlight-text {
+    color: #c0392b;
+    font-weight: bold;
+}
 </style>
 </head>
 <body>
@@ -203,12 +162,15 @@ li { margin-bottom: 8px; }
 <div><b>Joint Research Fellow</b>, RCHSS, Academia Sinica (中央研究院)</div>
 </div>
 
-<!-- 簡介區：純英文，流暢專業，去除夾雜的中文 -->
+<!-- 簡介區：強調 AI界李白、LLM建構、AI CUP -->
 <p style="line-height:1.7; color:#444;">
-Widely known in the media as the <b>"Li Bai of the AI World"</b>, Prof. Richard Tzong-Han Tsai is a leading authority in <b>LLM Construction</b> and <b>Interdisciplinary AI</b>. He specializes in the full lifecycle of model development, mastering data preparation, model training, and benchmarking.
+Widely known in the media as the <b>"Li Bai of the AI World" (AI界李白)</b>, Prof. Richard Tzong-Han Tsai is a leading authority in <b>LLM Construction</b> and <b>Interdisciplinary AI</b>. He specializes in the full lifecycle of model development, mastering data preparation, model training, and benchmarking.
 </p>
 <p style="line-height:1.7; color:#444;">
-Celebrated for his unique ability to bridge the humanities and sciences, Prof. Tsai is a pioneer in <b>Digital Humanities</b> and an educator dedicated to AI literacy. He currently serves as the <b>President of the Taiwanese Association for Artificial Intelligence (TAAI)</b>. His leadership extends to national infrastructure as the Co-PI of the <b>TAIDE Project</b> (Taiwan's sovereign LLM) and the founder of the <b>AI CUP</b>. His research team has achieved global recognition, winning the <b>BioASQ international challenge</b> for six consecutive years (2020–2025).
+Celebrated for his unique ability to bridge the humanities and sciences, Prof. Tsai is a pioneer in <b>Digital Humanities</b> and an educator dedicated to AI literacy. He currently serves as the <b>President of the Taiwanese Association for Artificial Intelligence (TAAI)</b>.
+</p>
+<p style="line-height:1.7; color:#444;">
+His leadership extends to national infrastructure as the Co-PI of the <b>TAIDE Project</b> (Taiwan's sovereign LLM) and the founder of the <b><a href="https://aicup.tw/" target="_blank" style="color:#0366d6; font-weight:bold;">AI CUP</a></b>. Under his direction, AI CUP has become Taiwan's largest AI competition, cultivating over 30,000 talents through rigorous, industry-aligned challenges.
 </p>
 
 <div style="margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
@@ -228,7 +190,12 @@ Celebrated for his unique ability to bridge the humanities and sciences, Prof. T
 
 <div class="sub-title">Current Positions</div>
 <ul>
-<li><strong>2018 – Present</strong>: Founder & Director, Ministry of Education <strong><a href="https://aicup.tw/" target="_blank" style="color:#0366d6;">AI CUP</a></strong> Program Office</li>
+<li>
+    <strong>2018 – Present</strong>: Founder & Director, Ministry of Education <strong><a href="https://aicup.tw/" target="_blank" style="color:#0366d6;">AI CUP</a></strong> Program Office<br>
+    <span style="font-size:0.95em; color:#666; display:block; margin-top:5px;">
+    Leading Taiwan's premier AI competition platform. The program bridges academic research with industry needs by organizing large-scale competitions in medical imaging, NLP, and speech processing, fostering thousands of AI talents annually.
+    </span>
+</li>
 <li><strong>2025/01 – Present</strong>: PI, Ministry of Education <strong>Write AI</strong> Project</li>
 <li><strong>2025/01 – Present</strong>: PI, Ministry of Education <strong>AI Mandarin Partner</strong> Project (AI華語拍檔)</li>
 <li><strong>2024/04 – Present</strong>: Co-PI, NSTC <strong>TAIDE</strong> Project</li>
